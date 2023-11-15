@@ -4,7 +4,7 @@ import string
 
 class Generator:
     def __init__(self):
-        self.number_of_symbols = input("Введите длину пароля.")
+        self.number_of_symbols = input("Enter the password length:\n")
 
     def symbols(self):
         symbols = string.ascii_letters + "".join([chr(1040 + i) for i in range(32)])
